@@ -30,8 +30,8 @@ https://kagoshima-mk.connpass.com/
 2. 本リポジトリを使用しているPCにダウンロードする
    1. 上部メニュー > `File` > `Clone a Repository` を押下する
    2. `URL` のタブを選択し、以下のリポジトリのURLと保存場所を入力する
-    Repository URL に `https://github.com/kagoshima-mk/kagoshima-mk`
-    Local Path に好きなディレクトリを選択・入力
+    - Repository URL に `https://github.com/kagoshima-mk/kagoshima-mk`
+    - Local Path に好きなディレクトリを選択・入力
     ![](images/github-desktop-clone-repository.png)
    3. `Clone` を押下する
 3. GitHub Desktop の左上 `Current Repository` が `kagoshima-mk` と表示されていたら成功
