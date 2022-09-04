@@ -1,0 +1,43 @@
+{
+  // 自動フォーマット
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  // 制御文字を表示
+  "editor.renderControlCharacters": true,
+  // エディター上での空白文字の表示方法
+  "editor.renderWhitespace": "all",
+  "editor.renderLineHighlight": "all",
+  // 1つのタブに相当する半角スペースの数
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.roundedSelection": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "files.autoSave": "onFocusChange",
+  // 改行コードの規定値
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  // ファイル保存時にファイル末尾に改行を挿入
+  "files.insertFinalNewline": true,
+  // ファイル保存時に最終行以降の空行を削除
+  "files.trimFinalNewlines": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "html.format.enable": true,
+  // Linter は built-in ではなく "stylelint.vscode-stylelint" で行う
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  }
+}
