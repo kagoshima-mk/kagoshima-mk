@@ -1,0 +1,22 @@
+body {
+    background-image: url("hayapi.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:100%;
+    text-align:  center;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+h1{
+    font-size:100%;
+    color: #ff0000;
+}
+
+.content{
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
