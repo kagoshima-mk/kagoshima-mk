@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-vsliveshare.vsliveshare",
+    "naumovs.color-highlight",
+    "vscode-icons-team.vscode-icons",
+    "formulahendry.auto-rename-tag",
+    "stylelint.vscode-stylelint",
+    "bradlc.vscode-tailwindcss",
+    "ritwickdey.liveserver",
+    "ionutvmi.path-autocomplete",
+    "ecmel.vscode-html-css",
+    "vincaslt.highlight-matching-tag",
+    "pranaygp.vscode-css-peek",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
