@@ -1,6 +1,6 @@
 body {
     /* background-image: url("hayapi.jpg"); */
-    background: radial-gradient(#F2B9A1, #EA6264);
+    background: radial-gradient(#a1f2c4, #6292ea);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
@@ -12,7 +12,7 @@ body {
 
 h1{
     font-size:100%;
-    color: #ff0000;
+    color: #000000;
 }
 
 .content{
