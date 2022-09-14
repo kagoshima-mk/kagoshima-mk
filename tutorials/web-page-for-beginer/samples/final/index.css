@@ -10,9 +10,10 @@ body {
   /* background-image: url("hayapi.jpg"); */
 }
 
-h1 {
-  font-size: 100%;
-  color: #000000;
+.title{
+  font-size: 100px;
+  font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
+  font-weight: 900;
 }
 
 .content {
