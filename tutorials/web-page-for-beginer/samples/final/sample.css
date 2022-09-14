@@ -1,0 +1,18 @@
+h1 {
+  color: #6594e0;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #6594e0;
+}
+
+p {margin: 2rem auto;} /*外側の余白*/
+p {padding: 1rem 2rem;} /*外側の余白*/
+p {width: 90%;} /*幅*/
+p {font-size: 1rem; } /*文字サイズ*/
+p {color: #222; } /*文字色*/
+p {background: #fafafa;} /*背景色*/
+p {border: 3px solid #555;} /*枠*/
+p {font-weight: normal;} /*文字の太さ*/
+p {line-height: 1.6;} /*行間*/
+p {letter-spacing: 0.01rem;} /*字間*/
+p {text-align: left;} /*行揃え*/
+p {text-indent: 1rem;} /*字下げ*/
