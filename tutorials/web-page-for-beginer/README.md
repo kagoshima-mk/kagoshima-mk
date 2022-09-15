@@ -56,8 +56,34 @@ p {text-indent: 1rem;} /*字下げ*/
 ```
 ![image](https://user-images.githubusercontent.com/48468109/190323972-4ce56519-d3a3-4861-9410-d6bd7001e11a.png)
 
+### CSSフレームワークを使用する
 
+- [https://daisyui.com/](https://daisyui.com/) を使ってサイトをおしゃれにする
+- CDN について
+    - https://www.cloud9works.net/web/how-to-use-cdn-for-css-js/
+    ```html
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    ```
+    
+- フレームワークを使用した場合の違い
+    
+    ```html
+    <button>BUTTON</button>
+    ```
+    ![image](https://user-images.githubusercontent.com/48468109/190324862-a377f128-244f-44c9-a118-982e234086a9.png)
 
+    - [https://daisyui.com/components/button/](https://daisyui.com/components/button/)
+    ```html
+    <button class="btn">Button</button>
+    <button class="btn btn-primary">Button</button>
+    <button class="btn btn-secondary">Button</button>
+    <button class="btn btn-accent">Button</button>
+    <button class="btn btn-ghost">Button</button>
+    <button class="btn btn-link">Button</button>
+    ```
+    ![image](https://user-images.githubusercontent.com/48468109/190324993-789392ee-02b9-422a-8b4c-db513c8ccdd2.png)
+    
 ## カリキュラム
 
 1. [イベントの前準備](https://github.com/kagoshima-mk/kagoshima-mk#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AE%E5%89%8D%E6%BA%96%E5%82%99)を行う
