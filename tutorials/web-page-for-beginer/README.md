@@ -88,12 +88,13 @@ p {text-indent: 1rem;} /*字下げ*/
 
 1. [イベントの前準備](https://github.com/kagoshima-mk/kagoshima-mk#%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AE%E5%89%8D%E6%BA%96%E5%82%99)を行う
 1. リポジトリをエディタ(VSCode)で開く
-1. https://github.com/kagoshima-mk/kagoshima-mk/tree/main/tutorials/web-page-for-beginer/samples/final を参考にWebサイトを作る
+1. [チュートリアル](https://github.com/kagoshima-mk/kagoshima-mk/blob/main/tutorials/web-page-for-beginer/tutorial.md)を参考にWebサイトを作っていきます
 
 ## 自習編
 - https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site を参考に作ったページを公開してみる
     - https://github.com/hayasaki-shunsuke/hayasaki-shunsuke.github.io
-    - https://hayasaki-shunsuke.github.io/
+    - https://hayasaki-shunsuke.github.io/ のようなURLで公開することができます。
+    - 分からないことがあれば気軽に質問してください。
 
 
 ## チートシート
