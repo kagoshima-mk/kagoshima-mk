@@ -11,9 +11,18 @@ https://kagoshima-mk.connpass.com/
 
 **とくに準備が必要のないイベントもあります。connpassのイベントページに特に書いてなければ、準備は何もしなくてOKです。**
 
-ハンズオン形式のイベントの際は以下の準備が必要です。
+ハンズオン形式のイベントの際のみ以下の準備が必要です。
 
-## 1. 必要なアプリケーションをインストール
+## 1. Githubアカウントの登録
+
+こちらの記事を参考にGitHubアカウントを登録してください。
+
+GitHubアカウントの作成方法 (2021年版)
+https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d
+
+プロフィール欄のlocationに「Kagoshima, Japan」といった形でざっくりした居住地を登録しておくと、[身近なエンジニアと繋がりやすくなります](https://kurehajime.github.io/jimoto_no_github_user/#/of/Kagoshima)。
+
+## 2. 必要なアプリケーションをインストール
 
 次のアプリケーションをダウンロード・インストールしてください。
 
@@ -28,7 +37,7 @@ https://kagoshima-mk.connpass.com/
    - Git と呼ばれるバージョン管理ツールを使いやすくしてくれる
    - 無料で使える
 
-## 2. 本リポジトリをPCにダウンロードする
+## 3. 本リポジトリをPCにダウンロードする
 
 1. GitHub Desktop を開く
 2. 本リポジトリを使用しているPCにダウンロードする
@@ -45,7 +54,7 @@ https://kagoshima-mk.connpass.com/
 こちらからzipファイルをダウンロードしてください。
 https://github.com/kagoshima-mk/kagoshima-mk/archive/refs/heads/main.zip
 
-## 3. 本リポジトリをエディタで開く
+## 4. 本リポジトリをエディタで開く
 
 1. GitHub Desktopを開いて、左上 `Current Repository` が `kagoshima-mk` と表示されているか確認する
 2. 上部メニュー > `Repository` > `Open in Visual Studio Code` を押下する
