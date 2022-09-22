@@ -18,6 +18,9 @@
 
 index.htmlをダブルクリックして、今回用意した初期状態のページがどんなものか確認してみましょう。
 
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/4569916/191677131-79268474-fbd7-4463-b5d1-77458be3d284.png">
+
+
 ## ③HTMLをいじってみよう
 
 index.htmlの以下の箇所を
@@ -42,7 +45,7 @@ index.htmlをダブルクリックして、タイトルが追加されたか確�
 
 こんなかんじでタイトルが表示されます。
 
-<img width="762" alt="image" src="https://user-images.githubusercontent.com/4569916/191673966-06490b6c-4d80-4f4e-8422-648cdd3c4b57.png">
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/4569916/191677253-11040ce1-a35e-498f-b9e3-842b0ece3fa6.png">
 
 ## ⑤CSSを追加してみよう
 
@@ -62,7 +65,7 @@ index.htmlの以下の箇所を
 
 なんか良い感じになってきました。
 
-<img width="1297" alt="image" src="https://user-images.githubusercontent.com/4569916/191674209-43acab87-28ff-4028-b609-6e73681ff4c5.png">
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/4569916/191677358-9489b083-a3a5-41cc-8223-55b2d8d8ec9c.png">
 
 
 ## ⑥文字の色を変えてみよう
@@ -93,7 +96,7 @@ index.cssの以下の箇所を
 指定できる色はこちらで確認できます。
 https://www.colordic.org/
 
-<img width="939" alt="image" src="https://user-images.githubusercontent.com/4569916/191675033-3f601d6a-7cda-4330-896b-83586938f427.png">
+<img width="735" alt="image" src="https://user-images.githubusercontent.com/4569916/191677443-c9877931-5dd8-4132-9631-982eeed05dbf.png">
 
 個性を表現していきましょう。
 
@@ -107,7 +110,7 @@ https://www.colordic.org/
 
 この箇所を画像のファイル名に置き換えてみましょう。
 
-<img width="847" alt="image" src="https://user-images.githubusercontent.com/4569916/191675359-771ff31e-bb09-4624-bb14-d2bdd24a7688.png">
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/4569916/191677555-4a9b3cdd-05d0-49f5-8b1b-d7b733e580b4.png">
 
 個性が出てきました。
 
@@ -138,7 +141,7 @@ index.htmlの以下の箇所を
 </div>
 ```
 
-<img width="787" alt="image" src="https://user-images.githubusercontent.com/4569916/191675724-28f30745-915f-4ab6-b435-8f824e199d1a.png">
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/4569916/191677653-c6669f32-724f-450f-91fa-9fbfb49cc1ae.png">
 
 
 ## ⑨CSSフレームワークを使ってみよう
@@ -158,7 +161,7 @@ index.htmlの以下の箇所を
 
 ぐっと良くなって来ました。
 
-<img width="762" alt="image" src="https://user-images.githubusercontent.com/4569916/191675863-ab0eb25a-5109-4889-97c5-e9d94c571bc2.png">
+<img width="561" alt="image" src="https://user-images.githubusercontent.com/4569916/191677727-58a99b8d-0258-4899-983e-6c5b98a406c3.png">
 
 
 ### Daisy UIとは
@@ -199,6 +202,9 @@ index.htmlの以下の箇所を
   </a>
 </div>
 ```
+
+
+<img width="601" alt="image" src="https://user-images.githubusercontent.com/4569916/191677868-fc9f254a-30af-40e4-a32f-c8a77e1592e0.png">
 
 ### svgとは
 パラメータの文字列で図形がかける画像形式です。
