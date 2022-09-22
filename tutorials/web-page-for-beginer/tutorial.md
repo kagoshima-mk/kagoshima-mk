@@ -2,31 +2,77 @@
 
 ## テンプレートを用意しよう
 
+ダウンロードorクローンした
+以下のフォルダを開きましょう。
+
+`kagoshima-mk/tutorials/web-page-for-beginer/samples/1st/`
+
+フォルダ名は「1st」です。間違えないようにしましょう。
+
+以下のようなファイルがあるはずです。
+
+* index.html
+* index.css
+
+## まずは初期状態を確認してみよう
+
+index.htmlをダブルクリックして、今回用意した初期状態のページがどんなものか確認してみましょう。
+
 ## HTMLをいじってみよう
 
+index.htmlの以下の箇所を
 
 ```
   <h1 class="btn btn-ghost normal-case title"><!--ここにページのタイトルを追加--></h1>
 ```
 
-↓
+こちらに置き換えて見ましょう。
 
 ```
   <h1 class="btn btn-ghost normal-case title">hayapi</h1>
 ```
 
-## CSSフレームワークを使ってみよう
+## ブラウザで確認してみよう
+
+index.htmlをダブルクリックして、タイトルが追加されたか確認してみましょう。
+
+## CSSを追加してみよう
+
+index.htmlの以下の箇所を
 
 ```
-  <!-- ここにCSSフレームワークの参照を追加 -->
+  <!-- ここにCSSの参照を追加 -->
 ```
 
+こちらに置き換えて見ましょう。
+
 ```
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css" />
 ```
 
+## 文字の色を変えてみよう
 
+index.cssの以下の箇所を
+
+```
+.title{
+  font-size: 100px;
+  font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
+  font-weight: 900;
+  /* ここに色を追加 */
+}
+```
+
+こちらに置き換えて見ましょう。
+
+```
+.title{
+  font-size: 100px;
+  font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
+  font-weight: 900;
+  color: red;
+}
+```
 
 ## 画像を差し替えてみよう
 
@@ -38,7 +84,66 @@
 
 この箇所を新しい画像ファイルに置き換えてみましょう。
 
+
+## 自己紹介を追加しよう
+
+index.htmlの以下の箇所を
+
+```
+<!-- ここに自己紹介を追加-->
+```
+
+こちらに置き換えて見ましょう。
+文章はみなさん自分なりに考えてみてください。
+
+```
+<div class="grid card bg-base-100 mb-8">
+  <div class="card-body text-left">
+    <h2 class="card-title">自己紹介</h2>
+    <p>私がはやぴ @hayapi_ppb です</p>
+  </div>
+</div>
+<div class="grid card bg-base-100 mb-8">
+  <div class="card-body text-left">
+    <h2 class="card-title">所属</h2>
+    <p>GMOペパボ株式会社</p>
+    <p>CTO室 鹿児島エンジニアリングチーム</p>
+  </div>
+</div>
+```
+
+
+## CSSフレームワークを使ってみよう
+
+index.htmlの以下の箇所を
+
+```
+  <!-- ここにCSSフレームワークの参照を追加 -->
+```
+
+こちらに置き換えて見ましょう。
+
+```
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+```
+
+### Daisy UIとは
+
+今回利用するCSSフレームワークDaisy UIは、classに特定のキーワードを付加するだけでかんたんにデザインを変えられる便利なフレームワークです。
+
+たとえばdiv要素に`<div class="grid card">`のように指定すると、簡単にカード型のUIを実現できます。
+
+
 ## ソーシャルアイコンを差し替えてみよう
+
+index.htmlの以下の箇所を
+
+```
+        <!-- ここにソーシャルアイコンを追加-->
+```
+
+こちらに置き換えて見ましょう。
 
 ```
 <div class="btn-group h-20 mb-8">
@@ -62,30 +167,11 @@
 </div>
 ```
 
-### Daisy UIとは
+### svgとは
+パラメータの文字列で図形がかける画像形式です。
+どんなに拡大しても画像が荒くならないのが特徴です。
 
 
-## 自己紹介を追加しよう
+## これでひととおり完成です
 
-
-```
-<!-- ここに自己紹介を追加-->
-```
-
-を以下に置き換えましょう。
-
-```
-<div class="grid card bg-base-100 mb-8">
-  <div class="card-body text-left">
-    <h2 class="card-title">自己紹介</h2>
-    <p>私がはやぴ @hayapi_ppb です</p>
-  </div>
-</div>
-<div class="grid card bg-base-100 mb-8">
-  <div class="card-body text-left">
-    <h2 class="card-title">所属</h2>
-    <p>GMOペパボ株式会社</p>
-    <p>CTO室 鹿児島エンジニアリングチーム</p>
-  </div>
-</div>
-```
+おめでとうございます！
