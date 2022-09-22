@@ -27,6 +27,7 @@ index.htmlの以下の箇所を
 ```
 
 こちらに置き換えて見ましょう。
+下の例では「hayapi」というタイトルになっていますが、ここに自分の名前なり好きな言葉なりを入れてください。
 
 ```
   <h1 class="btn btn-ghost normal-case title">hayapi</h1>
