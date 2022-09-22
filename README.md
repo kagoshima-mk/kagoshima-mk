@@ -17,8 +17,8 @@ https://kagoshima-mk.connpass.com/
 
 こちらの記事を参考にGitHubアカウントを登録してください。
 
-GitHubアカウントの作成方法 (2021年版)
-https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d
+[GitHubアカウントの作成方法 (2021年版)](
+https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d)
 
 プロフィール欄のlocationに「Kagoshima, Japan」といった形でざっくりした居住地を登録しておくと、[身近なエンジニアと繋がりやすくなります](https://kurehajime.github.io/jimoto_no_github_user/#/of/Kagoshima)。
 
