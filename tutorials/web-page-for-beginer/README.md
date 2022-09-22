@@ -149,7 +149,7 @@ After
 
 ## 自習編
 
-- 参考に作ったページを公開してみる
+- 作ったページを公開してみる
     1. Githubで「ユーザー名.github.io」といった名前のリポジトリを作る。(例:hayasaki-shunsuke.github.io)
     1. index.html、index.css,画像をリポジトリの直下にアップロードする。
     1. [Githubのヘルプ](https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site)を参考にGithub Pagesを有効にする。
