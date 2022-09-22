@@ -95,7 +95,7 @@ https://www.colordic.org/
 
 <img width="939" alt="image" src="https://user-images.githubusercontent.com/4569916/191675033-3f601d6a-7cda-4330-896b-83586938f427.png">
 
-
+個性を表現していきましょう。
 
 ## ⑦画像を差し替えてみよう
 
@@ -109,7 +109,7 @@ https://www.colordic.org/
 
 <img width="847" alt="image" src="https://user-images.githubusercontent.com/4569916/191675359-771ff31e-bb09-4624-bb14-d2bdd24a7688.png">
 
-
+個性が出てきました。
 
 ## ⑧自己紹介を追加しよう
 
@@ -138,6 +138,8 @@ index.htmlの以下の箇所を
 </div>
 ```
 
+<img width="787" alt="image" src="https://user-images.githubusercontent.com/4569916/191675724-28f30745-915f-4ab6-b435-8f824e199d1a.png">
+
 
 ## ⑨CSSフレームワークを使ってみよう
 
@@ -153,6 +155,11 @@ index.htmlの以下の箇所を
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 ```
+
+ぐっと良くなって来ました。
+
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/4569916/191675863-ab0eb25a-5109-4889-97c5-e9d94c571bc2.png">
+
 
 ### Daisy UIとは
 
