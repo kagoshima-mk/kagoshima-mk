@@ -36,6 +36,7 @@ index.htmlの以下の箇所を
   <h1 class="btn btn-ghost normal-case title">hayapi</h1>
 ```
 
+絵文字🐾も使えます。
 
 
 ## ④ブラウザで確認してみよう
