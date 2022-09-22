@@ -1,0 +1,19 @@
+h1 {
+  color: #6594e0; /*文字色*/
+  border-bottom: dashed 2px #6594e0; /*線の種類（点線）2px 線色*/
+}
+
+p {
+  margin: 1rem auto; /*外側の余白*/
+  padding: 2rem 1rem; /*外側の余白*/
+  width: 90%; /*幅*/
+  font-size: 1rem; /*文字サイズ*/
+  color: #222; /*文字色*/
+  background: #fafafa; /*背景色*/
+  border: 3px solid #555; /*枠*/
+  font-weight: normal; /*文字の太さ*/
+  line-height: 1.6; /*行間*/
+  letter-spacing: 0.01rem; /*字間*/
+  text-align: left; /*行揃え*/
+  text-indent: 1rem; /*字下げ*/
+};
