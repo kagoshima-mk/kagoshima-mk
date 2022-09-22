@@ -1,0 +1,24 @@
+body {
+  background: radial-gradient(#a1f2c4, #6292ea);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-image: url("hayapi.jpg"); */
+}
+
+.title{
+  font-size: 100px;
+  font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
+  font-weight: 900;
+}
+
+.content {
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
