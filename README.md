@@ -36,6 +36,11 @@ https://kagoshima-mk.connpass.com/
    3. `Clone` を押下する
 3. GitHub Desktop の左上 `Current Repository` が `kagoshima-mk` と表示されていたら成功
 
+### GitHub Desktopがどうしても利用できない時は
+
+こちらからzipファイルをダウンロードしてください。
+https://github.com/kagoshima-mk/kagoshima-mk/archive/refs/heads/main.zip
+
 ## 3. 本リポジトリをエディタで開く
 
 1. GitHub Desktopを開いて、左上 `Current Repository` が `kagoshima-mk` と表示されているか確認する
