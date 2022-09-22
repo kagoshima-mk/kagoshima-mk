@@ -93,7 +93,8 @@ p {text-indent: 1rem;} /*字下げ*/
 ## 自習編
 - https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site を参考に作ったページを公開してみる
     - https://github.com/hayasaki-shunsuke/hayasaki-shunsuke.github.io
-    - https://hayasaki-shunsuke.github.io/
+    - https://hayasaki-shunsuke.github.io/ のようなURLで公開することができます。
+    - 分からないことがあれば気軽に質問してください。
 
 
 ## チートシート
