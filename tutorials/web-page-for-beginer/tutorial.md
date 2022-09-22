@@ -33,9 +33,16 @@ index.htmlの以下の箇所を
   <h1 class="btn btn-ghost normal-case title">hayapi</h1>
 ```
 
+
+
 ## ④ブラウザで確認してみよう
 
 index.htmlをダブルクリックして、タイトルが追加されたか確認してみましょう。
+
+
+こんなかんじでタイトルが表示されます。
+
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/4569916/191673966-06490b6c-4d80-4f4e-8422-648cdd3c4b57.png">
 
 ## ⑤CSSを追加してみよう
 
@@ -47,9 +54,16 @@ index.htmlの以下の箇所を
 
 こちらに置き換えて見ましょう。
 
+今回はあらかじめ良い感じになるようなCSSを用意しています。
+
 ```
   <link rel="stylesheet" href="index.css" />
 ```
+
+なんか良い感じになってきました。
+
+<img width="1297" alt="image" src="https://user-images.githubusercontent.com/4569916/191674209-43acab87-28ff-4028-b609-6e73681ff4c5.png">
+
 
 ## ⑥文字の色を変えてみよう
 
@@ -71,9 +85,17 @@ index.cssの以下の箇所を
   font-size: 100px;
   font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
   font-weight: 900;
-  color: red;
+  color: midnightblue;
 }
 ```
+
+
+指定できる色はこちらで確認できます。
+https://www.colordic.org/
+
+<img width="939" alt="image" src="https://user-images.githubusercontent.com/4569916/191675033-3f601d6a-7cda-4330-896b-83586938f427.png">
+
+
 
 ## ⑦画像を差し替えてみよう
 
@@ -83,7 +105,10 @@ index.cssの以下の箇所を
   <img src="" />
 ```
 
-この箇所を新しい画像ファイルに置き換えてみましょう。
+この箇所を画像のファイル名に置き換えてみましょう。
+
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/4569916/191675359-771ff31e-bb09-4624-bb14-d2bdd24a7688.png">
+
 
 
 ## ⑧自己紹介を追加しよう
