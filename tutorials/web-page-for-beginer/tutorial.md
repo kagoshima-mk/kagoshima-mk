@@ -175,3 +175,6 @@ index.htmlの以下の箇所を
 ## これでひととおり完成です
 
 おめでとうございます！
+
+早く終わった人は[自習編](https://github.com/kagoshima-mk/kagoshima-mk/tree/main/tutorials/web-page-for-beginer#%E8%87%AA%E7%BF%92%E7%B7%A8)のリンクを参考に、作ったサイトをネットに公開してみましょう。
+または周りの困ってる人を助けてあげましょう。
