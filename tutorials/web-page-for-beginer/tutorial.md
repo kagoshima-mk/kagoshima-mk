@@ -18,6 +18,9 @@
 
 index.htmlをダブルクリックして、今回用意した初期状態のページがどんなものか確認してみましょう。
 
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/4569916/191677131-79268474-fbd7-4463-b5d1-77458be3d284.png">
+
+
 ## ③HTMLをいじってみよう
 
 index.htmlの以下の箇所を
@@ -27,14 +30,22 @@ index.htmlの以下の箇所を
 ```
 
 こちらに置き換えて見ましょう。
+下の例では「hayapi」というタイトルになっていますが、ここに自分の名前なり好きな言葉なりを入れてください。
 
 ```
   <h1 class="btn btn-ghost normal-case title">hayapi</h1>
 ```
 
+
+
 ## ④ブラウザで確認してみよう
 
 index.htmlをダブルクリックして、タイトルが追加されたか確認してみましょう。
+
+
+こんなかんじでタイトルが表示されます。
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/4569916/191677253-11040ce1-a35e-498f-b9e3-842b0ece3fa6.png">
 
 ## ⑤CSSを追加してみよう
 
@@ -46,9 +57,16 @@ index.htmlの以下の箇所を
 
 こちらに置き換えて見ましょう。
 
+今回はあらかじめ良い感じになるようなCSSを用意しています。
+
 ```
   <link rel="stylesheet" href="index.css" />
 ```
+
+なんか良い感じになってきました。
+
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/4569916/191677358-9489b083-a3a5-41cc-8223-55b2d8d8ec9c.png">
+
 
 ## ⑥文字の色を変えてみよう
 
@@ -70,9 +88,17 @@ index.cssの以下の箇所を
   font-size: 100px;
   font-family: "Hiragino Sans","Helvetica Black","Arial Black", "sans-serif";;
   font-weight: 900;
-  color: red;
+  color: midnightblue;
 }
 ```
+
+
+指定できる色はこちらで確認できます。
+https://www.colordic.org/
+
+<img width="735" alt="image" src="https://user-images.githubusercontent.com/4569916/191677443-c9877931-5dd8-4132-9631-982eeed05dbf.png">
+
+個性を表現していきましょう。
 
 ## ⑦画像を差し替えてみよう
 
@@ -82,8 +108,11 @@ index.cssの以下の箇所を
   <img src="" />
 ```
 
-この箇所を新しい画像ファイルに置き換えてみましょう。
+この箇所を画像のファイル名に置き換えてみましょう。
 
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/4569916/191677555-4a9b3cdd-05d0-49f5-8b1b-d7b733e580b4.png">
+
+個性が出てきました。
 
 ## ⑧自己紹介を追加しよう
 
@@ -112,6 +141,8 @@ index.htmlの以下の箇所を
 </div>
 ```
 
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/4569916/191677653-c6669f32-724f-450f-91fa-9fbfb49cc1ae.png">
+
 
 ## ⑨CSSフレームワークを使ってみよう
 
@@ -127,6 +158,11 @@ index.htmlの以下の箇所を
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 ```
+
+ぐっと良くなって来ました。
+
+<img width="561" alt="image" src="https://user-images.githubusercontent.com/4569916/191677727-58a99b8d-0258-4899-983e-6c5b98a406c3.png">
+
 
 ### Daisy UIとは
 
@@ -166,6 +202,9 @@ index.htmlの以下の箇所を
   </a>
 </div>
 ```
+
+
+<img width="601" alt="image" src="https://user-images.githubusercontent.com/4569916/191677868-fc9f254a-30af-40e4-a32f-c8a77e1592e0.png">
 
 ### svgとは
 パラメータの文字列で図形がかける画像形式です。
