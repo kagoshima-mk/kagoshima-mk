@@ -149,10 +149,14 @@ After
 
 ## 自習編
 
-- https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site を参考に作ったページを公開してみる
-    - https://github.com/hayasaki-shunsuke/hayasaki-shunsuke.github.io
-    - https://hayasaki-shunsuke.github.io/ のようなURLで公開することができます。
-    - 分からないことがあれば気軽に質問してください。
+- 参考に作ったページを公開してみる
+    1. Githubで「ユーザー名.github.io」といった名前のリポジトリを作る。(例:hayasaki-shunsuke.github.io)
+    1. index.html、index.css,画像をリポジトリの直下にアップロードする。
+    1. [Githubのヘルプ](https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site)を参考にGithub Pagesを有効にする。
+    1. `https://ユーザー名.github.io`にアクセスしてみる。
+    
+    分からないことがあれば気軽に質問してください。
+    
 - 更に勉強したい！という人はこちらがオススメです
   - [ウェブ入門 - ウェブ開発を学ぶ | MDN](https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web)
 
