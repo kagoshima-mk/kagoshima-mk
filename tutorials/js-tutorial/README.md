@@ -59,10 +59,8 @@ alert('Hello, world!!!');
 
 確認が終わったら、追加したコードは削除しておいてください。
 
-つまり、今回の`main.js`で足されたコードがJavaScriptということです。
+今回の`main.js`で足されたコードがJavaScriptです。
 JavaScriptには、いろいろな機能があります。
-
-詳しく知りたい方はここを参照してください。
 
 ### #4: タイトルの表示変更します
 
@@ -106,23 +104,26 @@ myImage.onclick = () => {
   let myButton = document.querySelector('button');
   let myHeading = document.querySelector('h1');
 
+  // タイトルを変更します
   function setUserName() {
-    let myName = prompt('Please enter your name.');
+    let myName = prompt('名前を入力してください。');
     if(!myName) {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.innerHTML = myName + 'さん、鹿児島.mkへようこそ！';
+      myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
     }
   }
 
+  // 名前の入力を一度でもしてたときは、その名前をタイトルに入力します。
   if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.innerHTML = storedName + 'さん、鹿児島.mkへようこそ！';
+    myHeading.textContent = storedName + 'さん、鹿児島.mkへようこそ！';
   }
 
+  // クリックボタンを押したときに名前の入力を聞くウィンドウが開きます。
   myButton.onclick = function() {
     setUserName();
   }
