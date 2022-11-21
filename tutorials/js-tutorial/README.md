@@ -44,6 +44,7 @@ https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/JavaScr
 1. #1でindex.htmlに追加したものを消しましょう。
 2. 次に`main.js`というファイルを作ります。
 3. `index.html`の `<head>` と `<head>` の中に次を書き入れます。
+  (`</head>`の上の行に挿入してください。)
 
   ```html
   <script defer src="./main.js"></script>
@@ -55,6 +56,8 @@ alert('Hello, world!!!');
 ```
 
 #1の課題と同じものができることを確認してみましょう。
+
+確認が終わったら、追加したコードは削除しておいてください。
 
 つまり、今回の`main.js`で足されたコードがJavaScriptということです。
 JavaScriptには、いろいろな機能があります。
@@ -96,7 +99,7 @@ myImage.onclick = () => {
 
 1. `index.html`の`</body>`の上の行に
   ```html
-  <button> click</button>
+  <button>click</button>
   ```
 2. `main.js`に以下を追加します
   ```js
