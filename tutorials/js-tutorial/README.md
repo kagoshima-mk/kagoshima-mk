@@ -133,6 +133,12 @@ myImage.onclick = () => {
 
 画面を確認してください。どのような動きになっているでしょうか？
 
+今回のJapascript入門は体験会ということで、Javascriptの詳しい機能については省かせていただきませた。
+この体験会でJavascriptに興味を持っていただけたのであれば、MDNのページを参照してください。
+https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
+
+もっと詳しいJavascriptを学ぶことができます。
+
 ## 発展編
 
 ### #7: ダークモードの切替ボタンを実装してみよう
