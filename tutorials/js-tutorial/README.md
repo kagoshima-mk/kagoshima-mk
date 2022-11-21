@@ -100,29 +100,29 @@ myImage.onclick = () => {
   ```
 2. `main.js`に以下を追加します
   ```js
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+  let myButton = document.querySelector('button');
+  let myHeading = document.querySelector('h1');
 
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName) {
+  function setUserName() {
+    let myName = prompt('Please enter your name.');
+    if(!myName) {
+      setUserName();
+    } else {
+      localStorage.setItem('name', myName);
+      myHeading.innerHTML = myName + 'さん、鹿児島.mkへようこそ！';
+    }
+  }
+
+  if(!localStorage.getItem('name')) {
     setUserName();
   } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = myName + 'さん、鹿児島.mkへようこそ！';
+    let storedName = localStorage.getItem('name');
+    myHeading.innerHTML = storedName + 'さん、鹿児島.mkへようこそ！';
   }
-}
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = storedName + 'さん、鹿児島.mkへようこそ！';
-}
-
-myButton.onclick = function() {
-  setUserName();
-}
+  myButton.onclick = function() {
+    setUserName();
+  }
   ```
 
 画面を確認してください。どのような動きになっているでしょうか？
