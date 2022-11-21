@@ -13,6 +13,8 @@ https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/JavaScr
 
 ## Javascriptとは？
 
+https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript#%E9%AB%98%E6%B0%B4%E6%BA%96%E3%81%AE%E5%AE%9A%E7%BE%A9
+
 
 ## 体験
 
