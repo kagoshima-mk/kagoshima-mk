@@ -11,19 +11,19 @@ https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/JavaScr
   - 最終的に「**なんかよく分からんけど動くやん！！！**」と楽しくなっていただくためのイベントです
 
 
-## Javascriptとは？
+## JavaScriptとは？
 
 https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript#%E9%AB%98%E6%B0%B4%E6%BA%96%E3%81%AE%E5%AE%9A%E7%BE%A9
 
 
 ## 体験
 
-### ＃１：　ウインドウっぽいものを表示しよう！
+### ＃１：　アラートを表示しよう！
 
-表示をすると `alert` を表示される画面を作りましょう。
+ページを開くと `alert` が自動表示される画面を作りましょう。
 
-`samples` 内にある `index.html` をみてください。
-その中に`<body>`と`</body>`を探して、その間に以下を書いてみましょう。
+`samples/trial/` 内にある `index.html` をエディタで開いてください。
+その中 `samples/trial/index.html` にある `<body>` と `</body>` を探して、その間に以下を書き入れてみましょう。
 
 ```html
 <script>
@@ -31,22 +31,26 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 </script>
 ```
 
-以下の画像が出ることを確認してください。
+<!-- TODO: `samples/trial/index.html` を開くための手順を提示した方が良さそう -->
+以下のアラートが出ることを確認してください。
 
 ![img](./images/%231_image.png)
 
+この `<script>` タグで囲まれたコードが JavaScript です。
+JavaScriptには、いろいろな機能があります。
+
 ### #2: 場所を確認しよう
 
-#1 で追加した `<script>` と `</script>` を消してブラウザを更新してみましょう。
+#1 で追加した `<script>` と `</script>` を消してページを更新 (F5 ボタンを押下) してみましょう。
 
 どうなったでしょうか？
 
 ### #3：　ファイルを分けてみましょう
 
-1. #1でindex.htmlに追加したものを消しましょう。
-2. 次に`main.js`というファイルを作ります。
-3. `index.html`の `<head>` と `<head>` の中に次を書き入れます。
-  (`</head>`の上の行に挿入してください。)
+1. #1で index.html に追加したものを消しましょう。
+2. 次に `main.js` というファイルを作ります。
+3. `index.html` の `<head>` と `</head>` の中に次を書き入れます。
+  (`</head>` の上の行に挿入してください)
 
   ```html
   <script defer src="./main.js"></script>
@@ -57,30 +61,31 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 alert('Hello, world!!!');
 ```
 
-#1の課題と同じものができることを確認してみましょう。
+#1 の課題と同じ動きになることを確認してください。
 
 確認が終わったら、追加したコードは削除しておいてください。
 
-今回の`main.js`で足されたコードがJavaScriptです。
-JavaScriptには、いろいろな機能があります。
+このように、JavaScript は HTML と別ファイルにも記述できます。HTML とは別ファイルに記述した場合、そのファイルを読み込むためのタグを HTML に埋め込む必要があります `<script defer src="./main.js"></script>`
 
 ### #4: タイトルの表示変更します
 
-#3で作った `main.js` に以下を追加してください。
+#3で作った `samples/trial/main.js` に以下を追加してください。
 
 ```js
 const myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 ```
 
+<!-- TODO: これによって画面や動きがどうなるのかを記述する -->
+
 ### #5: 画像を入れ替えてみよう
 
-画面をクリックして画像の入れ替わりを体験します。
+画面をクリックすることで画像が切り替わる機能を実装します。
 
 まずは、好きな画像を探しましょう。
-探した画像を`images`フォルダに保存してください。
+探した画像を `samples/trial/images` フォルダに保存してください。
 
-保存した後に `main.js` に以下のコードを書いてください。
+保存した後に `samples/trial/main.js` に以下のコードを書いてください。
 
 ```js
 const myImage = document.querySelector('img');
@@ -97,21 +102,22 @@ myImage.onclick = () => {
 
 ### #6: ボタンを押して動作するイベントを作ろう
 
-1. `index.html`の`</body>`の上の行に
+1. `index.html`の`</body>`の上の行にボタンタグを追加します
   ```html
   <button>click</button>
   ```
-2. `main.js`に以下を追加します
+1. `main.js`に以下を追加します
   ```js
-  let myButton = document.querySelector('button');
-  let myHeading = document.querySelector('h1');
+  const myButton = document.querySelector('button');
+  const myHeading = document.querySelector('h1');
 
   // タイトルを変更します
   function setUserName() {
-    let myName = prompt('名前を入力してください。');
+    const myName = prompt('名前を入力してください。');
     if(!myName) {
       setUserName();
     } else {
+      // TODO: localStrage の説明をいれる？ もしくはローカルストレージ部分を削除する
       localStorage.setItem('name', myName);
       myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
     }
@@ -121,7 +127,7 @@ myImage.onclick = () => {
   if(!localStorage.getItem('name')) {
     setUserName();
   } else {
-    let storedName = localStorage.getItem('name');
+    const storedName = localStorage.getItem('name');
     myHeading.textContent = storedName + 'さん、鹿児島.mkへようこそ！';
   }
 
@@ -131,13 +137,19 @@ myImage.onclick = () => {
   }
   ```
 
+<!-- TODO: ボタンを押さないと動かないのではないか？ また、ボタン押下でどのような動きになるのかを提示してあげた方が良さそう -->
 画面を確認してください。どのような動きになっているでしょうか？
 
-今回のJapascript入門は体験会ということで、Javascriptの詳しい機能については省かせていただきませた。
-この体験会でJavascriptに興味を持っていただけたのであれば、MDNのページを参照してください。
-https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
+### JavaScript についてさらに勉強をしたい場合
 
-もっと詳しいJavascriptを学ぶことができます。
+今回の JavaScript 入門は体験会ということで、JavaScript の詳しい説明については省かせていただきませた。
+
+この体験会で JavaScript に興味を持っていただけたのであれば、MDNのページを参照してください。詳しく JavaScript を学ぶことができます。
+<!-- TODO: MDN の説明をいれる  -->
+
+- https://developer.mozilla.org/ja/docs/Learn/JavaScript
+- https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
+
 
 ## 発展編
 
@@ -153,9 +165,9 @@ daisyUI は、[CSSフレームワーク TailwindCSS](https://tailwindcss.com/) �
 
 daisyUI には、[テーマ機能](https://daisyui.com/docs/themes/)というがあり、今回はそれを使ってダークモードを実装します。具体的には、ライトモードとダークモードのテーマを指定しておき、切替ボタンを押すとテーマを切り替える機能です。
 
-1. [JavaScript 入門 発展編](./samples/appendix/) の index.html を開いてください
-2. [ダークモードの切替処理を実装しているJS](./samples/appendix/main.js) を開いて、どんな処理をしているのかを確認してください
-3. [daisyUI のテーマ機能](https://daisyui.com/docs/themes/)を見ながら、好きなテーマを設定してみましょう！
+1. [JavaScript 入門 発展編](./samples/appendix/) の `samples/appendix/index.html` を開いてください
+2. [ダークモードの切替処理を実装しているJS](./samples/appendix/main.js) `samples/appendix/main.js` を開いて、どんな処理をしているのかを確認してください
+3. [daisyUI のテーマ機能](https://daisyui.com/docs/themes/)を見ながら、ライトテーマとダークテーマを好きなテーマに変更してみましょう！
 4. ダークモードの切替ボタンを、「鹿児島.mkとは」のセクションに追加してください
    - フッター (画面下部) の実装が参考になると思います
-5. main.js の中身を全て (または一部) 消去してみて、自分で実装してみましょう
+5. `samples/appendix/main.js` の中身を全て (または一部) 消去してみて、自分で実装してみましょう
