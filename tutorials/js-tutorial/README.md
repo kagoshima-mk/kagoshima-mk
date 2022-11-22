@@ -18,6 +18,9 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 
 ## 体験
 
+#### 実行方法について
+`samples/trial/` 内にある `index.html` をブラウザにドラッグアンドドロップして作成したHTMLとJavaScriptを実行してください。
+
 ### ＃１：　アラートを表示しよう！
 
 ページを開くと `alert` が自動表示される画面を作りましょう。
@@ -31,7 +34,7 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 </script>
 ```
 
-<!-- TODO: `samples/trial/index.html` を開くための手順を提示した方が良さそう -->
+
 以下のアラートが出ることを確認してください。
 
 ![img](./images/%231_image.png)
@@ -76,7 +79,7 @@ const myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 ```
 
-<!-- TODO: これによって画面や動きがどうなるのかを記述する -->
+ブラウザを更新すると`index.html`に書かれている「Welcome 鹿児島.mk」が変更されています。
 
 ### #5: 画像を入れ替えてみよう
 
@@ -108,28 +111,15 @@ myImage.onclick = () => {
   ```
 1. `main.js`に以下を追加します
   ```js
-  const myButton = document.querySelector('button');
-  const myHeading = document.querySelector('h1');
-
-  // タイトルを変更します
-  function setUserName() {
-    const myName = prompt('名前を入力してください。');
-    if(!myName) {
-      setUserName();
-    } else {
-      // TODO: localStrage の説明をいれる？ もしくはローカルストレージ部分を削除する
-      localStorage.setItem('name', myName);
-      myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
-    }
-  }
-
-  // 名前の入力を一度でもしてたときは、その名前をタイトルに入力します。
-  if(!localStorage.getItem('name')) {
+// タイトルを変更します
+function setUserName() {
+  const myName = prompt('名前を入力してください。');
+  if(!myName) {
     setUserName();
   } else {
-    const storedName = localStorage.getItem('name');
-    myHeading.textContent = storedName + 'さん、鹿児島.mkへようこそ！';
+    myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
   }
+}
 
   // クリックボタンを押したときに名前の入力を聞くウィンドウが開きます。
   myButton.onclick = function() {
@@ -137,15 +127,14 @@ myImage.onclick = () => {
   }
   ```
 
-<!-- TODO: ボタンを押さないと動かないのではないか？ また、ボタン押下でどのような動きになるのかを提示してあげた方が良さそう -->
-画面を確認してください。どのような動きになっているでしょうか？
+画面を更新してボタンをクリックしてください。どのような動きになっているでしょうか？
 
 ### JavaScript についてさらに勉強をしたい場合
 
 今回の JavaScript 入門は体験会ということで、JavaScript の詳しい説明については省かせていただきませた。
 
 この体験会で JavaScript に興味を持っていただけたのであれば、MDNのページを参照してください。詳しく JavaScript を学ぶことができます。
-<!-- TODO: MDN の説明をいれる  -->
+[MDNについて](https://developer.mozilla.org/ja/docs/MDN)
 
 - https://developer.mozilla.org/ja/docs/Learn/JavaScript
 - https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
