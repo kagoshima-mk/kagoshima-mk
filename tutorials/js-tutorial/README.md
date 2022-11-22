@@ -111,15 +111,15 @@ myImage.onclick = () => {
   ```
 1. `main.js`に以下を追加します
   ```js
-// タイトルを変更します
-function setUserName() {
-  const myName = prompt('名前を入力してください。');
-  if(!myName) {
-    setUserName();
-  } else {
-    myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
+  // タイトルを変更します
+  function setUserName() {
+    const myName = prompt('名前を入力してください。');
+    if(!myName) {
+      setUserName();
+    } else {
+      myHeading.textContent = myName + 'さん、鹿児島.mkへようこそ！';
+    }
   }
-}
 
   // クリックボタンを押したときに名前の入力を聞くウィンドウが開きます。
   myButton.onclick = function() {
