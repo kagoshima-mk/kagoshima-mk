@@ -19,7 +19,7 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 ## 体験
 
 #### 実行方法について
-`samples/trial/` 内にある `index.html` をブラウザにドラッグアンドドロップして作成したHTMLとJavaScriptを実行してください。
+`samples/trial/` 内にある `index.html` をブラウザにドラッグ&ドロップして作成したHTMLとJavaScriptを実行してください。
 
 ### ＃１：　アラートを表示しよう！
 
