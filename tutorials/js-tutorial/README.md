@@ -33,7 +33,7 @@ https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaS
 
 以下の画像が出ることを確認してください。
 
-![img](./%231_image.png)
+![img](./images/%231_image.png)
 
 ### #2: 場所を確認しよう
 
@@ -142,3 +142,20 @@ https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
 ## 発展編
 
 ### #7: ダークモードの切替ボタンを実装してみよう
+
+[daisyUI](https://daisyui.com/) を使ってダークモードを実装してみましょう！
+
+|ライトモード|ダークモード
+|---|---
+|![ライトモードスクショ](./images/%237_light_mode.png)|![ダークモードスクショ](./images/%237_dark_mode.png)
+
+daisyUI は、[CSSフレームワーク TailwindCSS](https://tailwindcss.com/) を使った CSS コンポーネントライブラリです。「良い感じにスタイリングしてくれる君」と考えてもらったら、大きな間違いはありません。
+
+daisyUI には、[テーマ機能](https://daisyui.com/docs/themes/)というがあり、今回はそれを使ってダークモードを実装します。具体的には、ライトモードとダークモードのテーマを指定しておき、切替ボタンを押すとテーマを切り替える機能です。
+
+1. [JavaScript 入門 発展編](./samples/appendix/) の index.html を開いてください
+2. [ダークモードの切替処理を実装しているJS](./samples/appendix/main.js) を開いて、どんな処理をしているのかを確認してください
+3. [daisyUI のテーマ機能](https://daisyui.com/docs/themes/)を見ながら、好きなテーマを設定してみましょう！
+4. ダークモードの切替ボタンを、「鹿児島.mkとは」のセクションに追加してください
+   - フッター (画面下部) の実装が参考になると思います
+5. main.js の中身を全て (または一部) 消去してみて、自分で実装してみましょう
