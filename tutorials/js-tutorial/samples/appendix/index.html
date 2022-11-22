@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-theme="cupcake">
+  <head>
+    <meta charset="utf-8" />
+    <title>ダークモード切替機能を追加してみよう！</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.41.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./main.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar py-4">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">鹿児島.mk</a>
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost toggle-mode">Dark mode</button>
+      </div>
+    </header>
+
+    <main class="mx-auto mt-4 w-96">
+      <div class="card">
+        <div class="avatar mx-auto py-4">
+          <div
+            class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+          >
+            <img src="images/kagoshima-mk-image.png" />
+          </div>
+        </div>
+        <div class="flex flex-col content mb-8">
+          <div class="card">
+            <div class="card-body text-left">
+              <h2 class="card-title">鹿児島.mkとは</h2>
+              <p>「プログラミング初学者や初見のエンジニアでも気軽に参加できる」 がコンセプトのエンジニアコミュニティです。</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text-left">
+              <h2 class="card-title">参加</h2>
+              <a href="https://kagoshima-mk.connpass.com/">
+                <button class="btn btn-block btn-primary">connpass</button>
+              </a>
+              <a href="https://join.slack.com/t/kagoshima-mk/shared_invite/enQtNzMxNzc3NTQ4NDM5LTI4NGU3NjQzYjZjNjI3MDU3MWU2YmMxNGJjNzU0N2NkOTg3MGJhZGZjZDUwYTkzMGRmMGQ1ZDNiNTVlYmNmNTQ">
+                <button class="btn btn-block">Slack</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer footer-center p-10 rounded">
+      <div class="grid grid-flow-col gap-4">
+        <button class="btn btn-ghost toggle-mode">Dark mode</button>
+      </div>
+      <div>
+        <p>Copyright © 2019 - All right reserved by 鹿児島.mk</p>
+      </div>
+    </footer>
+  </body>
+</html>
