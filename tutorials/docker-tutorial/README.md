@@ -92,9 +92,9 @@ services:
 ```
 
 #### database.ymlに追記
-ファイルの場所
-作成したフォルダ名(docker-rails)/config/database.yml
-- 大体20行目~25行目
+- ファイルの場所
+  - 作成したフォルダ名(docker-rails)/config/database.yml
+> 大体20行目~25行目
 ```
 
 ```
@@ -107,7 +107,7 @@ development:
   username: root
   password: password
 ```
-- 大体29行目~34行目
+> 大体29行目~34行目
 ```
 
 ```
@@ -122,11 +122,12 @@ test:
 ```
 
 #### development.rbに追記
-Blocked hostエラーの対応
-作成したフォルダ名(docker-rails)/config/environments/development.rb
-- 大体4行目
+- Blocked hostエラーの対応
+- ファイルの場所
+  - 作成したフォルダ名(docker-rails)/config/environments/development.rb
+> 大体4行目
 ```
 Rails.application.configure do
-  config.hosts.clear
+  config.hosts.clear #ここを追記
   # Settings specified here will take precedence over those in config/application.rb.
 ```
