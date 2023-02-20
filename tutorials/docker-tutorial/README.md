@@ -129,7 +129,7 @@ docker compose build
 #### database.ymlに追記
 - ファイルの場所
   - 作成したフォルダ名(docker-rails)/config/database.yml
-> 大体20行目~25行目
+> 大体23行目~25行目あたりに追記
 ```
 development:
   <<: *default
@@ -146,7 +146,7 @@ development:
   password: password
   ## ここまで追記
 ```
-> 大体29行目~34行目
+> 大体32行目~34行目あたりに追記
 ```
 test:
   <<: *default
@@ -173,7 +173,7 @@ docker compose run web rails db:create
 - Blocked hostエラーの対応
 - ファイルの場所
   - 作成したフォルダ名(docker-rails)/config/environments/development.rb
-> 大体4行目
+> 大体4行目あたりに追記
 ```
 Rails.application.configure do
   ## ここから追記
