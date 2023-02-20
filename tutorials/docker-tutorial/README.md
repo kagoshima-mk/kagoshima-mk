@@ -74,10 +74,10 @@ FROM ruby:3.2.1
 RUN apt-get update -qq && apt-get install -y nodejs
 RUN mkdir /myapp
 WORKDIR /myapp
-COPY Gemfile /Gemfile
-COPY Gemfile.lock /Gemfile.lock
+ADD Gemfile /Gemfile
+ADD Gemfile.lock /Gemfile.lock
 RUN bundle install
-COPY . /myapp
+ADD . /myapp
 ```
 
 #### Gemfile
