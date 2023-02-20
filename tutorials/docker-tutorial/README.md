@@ -96,29 +96,37 @@ services:
   - 作成したフォルダ名(docker-rails)/config/database.yml
 > 大体20行目~25行目
 ```
-
+development:
+  <<: *default
+  database: myapp_development
 ```
 ↓
 ```
 development:
   <<: *default
   database: myapp_development
+  # ここから追記
   host: db
   username: root
   password: password
+  # ここまで追記
 ```
 > 大体29行目~34行目
 ```
-
+test:
+  <<: *default
+  database: myapp_test
 ```
 ↓
 ```
 test:
   <<: *default
   database: myapp_test
+  # ここから追記
   host: db
   username: root
   password: password
+  # ここまで追記
 ```
 
 #### development.rbに追記
