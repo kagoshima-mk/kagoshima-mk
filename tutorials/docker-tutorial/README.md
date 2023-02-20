@@ -128,6 +128,6 @@ test:
 > 大体4行目
 ```
 Rails.application.configure do
-  config.hosts.clear #　ここを追記
+  config.hosts.clear #ここを追記
   # Settings specified here will take precedence over those in config/application.rb.
 ```
