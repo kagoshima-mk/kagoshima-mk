@@ -44,12 +44,35 @@ volumes:
 
 ### Rails、 MySQLをDockerComposeで起動しよう
 
+#### DockerHubアカウントの作成
+- https://docs.docker.jp/mac/step_five.html 
+
+
+
+#### Dockerfile
+```
+FROM ruby:3.2.1
+RUN apt-get update -qq && apt-get install -y nodejs
+RUN mkdir /myapp
+WORKDIR /myapp
+ADD Gemfile /myapp/Gemfile
+ADD Gemfile.lock /myapp/Gemfile.lock
+RUN bundle install
+ADD . /myapp
+```
+
+#### Gemfile
+```
+source 'https://rubygems.org'
+gem 'rails', '7.0.4.2'
+```
+
 #### docker-compose.yaml
 ```
 version: '3'
 services:
   db:
-    image: mysql:latest
+    image: mysql:8.0.32
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: root
@@ -68,20 +91,42 @@ services:
       - db
 ```
 
-#### Dockerfile
-```
-FROM ruby:3.2.1
-RUN apt-get update -qq && apt-get install -y nodejs
-RUN mkdir /myapp
-WORKDIR /myapp
-ADD Gemfile /myapp/Gemfile
-ADD Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install
-ADD . /myapp
+#### database.ymlに追記
+ファイルの場所
+作成したフォルダ名(docker-rails)/config/database.yml
+- 大体20行目~25行目
 ```
 
-#### Gemfile
 ```
-source 'https://rubygems.org'
-gem 'rails', '7.0.4.2'
+↓
+```
+development:
+  <<: *default
+  database: myapp_development
+  host: db
+  username: root
+  password: password
+```
+- 大体29行目~34行目
+```
+
+```
+↓
+```
+test:
+  <<: *default
+  database: myapp_test
+  host: db
+  username: root
+  password: password
+```
+
+#### development.rbに追記
+Blocked hostエラーの対応
+作成したフォルダ名(docker-rails)/config/environments/development.rb
+- 大体4行目
+```
+Rails.application.configure do
+  config.hosts.clear
+  # Settings specified here will take precedence over those in config/application.rb.
 ```
