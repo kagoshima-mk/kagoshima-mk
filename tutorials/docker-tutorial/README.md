@@ -70,7 +70,7 @@ services:
 
 #### Dockerfile
 ```
-FROM ruby:latest
+FROM ruby:3.2.1
 RUN apt-get update -qq && apt-get install -y nodejs
 RUN mkdir /myapp
 WORKDIR /myapp
@@ -83,5 +83,5 @@ COPY . /myapp
 #### Gemfile
 ```
 source 'https://rubygems.org'
-gem 'rails', '~> 7.0.2'
+gem 'rails', '~> 7.0.4.2'
 ```
