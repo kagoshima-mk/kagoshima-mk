@@ -74,8 +74,8 @@ FROM ruby:3.2.1
 RUN apt-get update -qq && apt-get install -y nodejs
 RUN mkdir /myapp
 WORKDIR /myapp
-ADD Gemfile /Gemfile
-ADD Gemfile.lock /Gemfile.lock
+ADD Gemfile /myapp/Gemfile
+ADD Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
 ADD . /myapp
 ```
