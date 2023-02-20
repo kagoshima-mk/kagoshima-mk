@@ -45,9 +45,37 @@ volumes:
 ### Rails、 MySQLをDockerComposeで起動しよう
 
 #### DockerHubアカウントの作成
-- https://docs.docker.jp/mac/step_five.html 
+- https://docs.docker.jp/mac/step_five.html
 
+#### PlayWithDocker
+- https://labs.play-with-docker.com/
 
+#### PlayWithDockerのターミナル上でディレクトリ・フォルダ作成
+```
+mkdir docker-rails 
+```
+
+#### PlayWithDockerのターミナル上でディレクトリ・フォルダに移動
+```
+cd docker-rails
+```
+
+#### PlayWithDockerのターミナル上で作成したディレクトリ・フォルダ内でファイルの作成
+```
+touch Dockerfile
+```
+
+```
+touch Gemfile
+```
+
+```
+touch Gemfile.lock
+```
+
+```
+touch docker-compose.yml
+```
 
 #### Dockerfile
 ```
@@ -90,6 +118,13 @@ services:
     depends_on:
       - db
 ```
+#### PlayWithDockerのターミナル上で実行コマンド
+```
+docker compose run web rails new . --force --no-deps --database=mysql
+```
+```
+docker compose build
+```
 
 #### database.ymlに追記
 - ファイルの場所
@@ -105,11 +140,11 @@ development:
 development:
   <<: *default
   database: myapp_development
-  # ここから追記
+  ## ここから追記
   host: db
   username: root
   password: password
-  # ここまで追記
+  ## ここまで追記
 ```
 > 大体29行目~34行目
 ```
@@ -122,11 +157,16 @@ test:
 test:
   <<: *default
   database: myapp_test
-  # ここから追記
+  ## ここから追記
   host: db
   username: root
   password: password
-  # ここまで追記
+  ## ここまで追記
+```
+
+#### PlayWithDockerのターミナル上で実行コマンド
+```
+docker compose run web rails db:create
 ```
 
 #### development.rbに追記
@@ -136,8 +176,14 @@ test:
 > 大体4行目
 ```
 Rails.application.configure do
-  # ここから追記
+  ## ここから追記
   config.hosts.clear
-  # ここまで追記
+  ## ここまで追記
   # Settings specified here will take precedence over those in config/application.rb.
 ```
+
+#### PlayWithDockerのターミナル上で実行コマンド
+```
+docker compose up
+```
+#### OPEN PORTに　3000　と入力
