@@ -1,4 +1,4 @@
-# Docker DockerCompose　体験
+# Docker　体験
 
 ### 注意事項
 
@@ -136,6 +136,8 @@ test:
 > 大体4行目
 ```
 Rails.application.configure do
-  config.hosts.clear #ここを追記
+  # ここから追記
+  config.hosts.clear
+  # ここまで追記
   # Settings specified here will take precedence over those in config/application.rb.
 ```
