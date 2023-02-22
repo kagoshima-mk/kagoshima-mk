@@ -27,7 +27,7 @@ PlayWithDockerのターミナル上で
 touch docker-compose.yml
 ```
 
-#### docker-compose.yaml
+#### docker-compose.yml
 下記内容を貼り付ける
 
 ```
@@ -111,7 +111,7 @@ source 'https://rubygems.org'
 gem 'rails', '7.0.4.2'
 ```
 
-#### docker-compose.yaml
+#### docker-compose.yml
 ```
 version: '3'
 services:
