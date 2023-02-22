@@ -2,17 +2,18 @@
 
 ### 注意事項
 
-- Dockerはしっかり学ぼうと思うと大変難しい内容になってきます。
-- 今回の体験会を通して、大まかなイメージを掴んでいただければ大丈夫です。
+- Dockerはしっかり学ぼうと思うと広い範囲での知識が必要になってきます。
+- 今回の体験会を通して、大まかなイメージを掴んでいただければ大丈夫です！
+- 今後より学びたいと思った時に、今回の経験がプラスになれば幸いです！
 - Dockerの環境構築に関しましては、今回は体験する時間を確保する為、割愛させていただいております。
 
 ### Dockerとは？
 https://docs.docker.jp/get-started/overview.html
 
 ## 体験
-- Dockerについて学ぶ際に使うツールとして「Play With Docker」を使用
-- 理由としてDockerを利用する環境構築をおこなう際、Mac・Windowsでの構築手順に違いがあり、今回の体験会では時間の都合から難しいと判断したため
-- Dockerの環境構築がお済みの方に関しては、ご自分の環境で実施していただいて問題ありません
+- Dockerについて学ぶ際に使うツールとして「Play With Docker」を使用します。
+- 理由としてDockerの環境構築をおこなう際、Mac・Windowsでの構築手順に違いがあり、今回の体験会では全て対応するのは難しいと判断いたしました。
+- Dockerの環境構築がお済みの方に関しては、ご自分の環境で実施していただいて問題ありません！
 
 #### DockerHubアカウントの作成
 - https://docs.docker.jp/mac/step_five.html
@@ -20,7 +21,7 @@ https://docs.docker.jp/get-started/overview.html
 #### PlayWithDocker
 - https://labs.play-with-docker.com/
 
-### Docker Compose で WordPress を起動しよう
+## Docker Compose で WordPress を起動しよう
 PlayWithDockerのターミナル上で
 ```
 touch docker-compose.yml
@@ -59,11 +60,11 @@ volumes:
   db_data:
 
 ```
-- OPEN PORTに　3000　と入力
+#### OPEN PORTに　8000　と入力
 
  Docker-docs-ja（https://docs.docker.jp/compose/wordpress.html）より
 
-### Rails、 MySQLをDockerComposeで起動しよう
+## Rails、 MySQLをDockerComposeで起動しよう
 
 #### PlayWithDockerのターミナル上でディレクトリ・フォルダ作成
 ```
