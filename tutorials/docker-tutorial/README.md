@@ -62,7 +62,7 @@ volumes:
 ```
 #### OPEN PORTに　8000　と入力
 
- Docker-docs-ja（https://docs.docker.jp/compose/wordpress.html）より
+ Docker-docs-ja:https://docs.docker.jp/compose/wordpress.html より
 
 ## Rails、 MySQLをDockerComposeで起動しよう
 
