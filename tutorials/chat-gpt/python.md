@@ -156,3 +156,12 @@ OpenAIのgpt-3.5-turboのAPIを利用する際には、メッセージにroleと
 このようにお膳立てしてあげると安定した解答が得られます。
 
 `天高く ひとり佇む 黒猫の姿`
+
+
+
+## 他言語の例
+nodeの例
+https://zenn.dev/kurehajime/scraps/f8e59991ab68c8
+
+rubyの例
+https://zenn.dev/kurehajime/scraps/2acd65078baebe
