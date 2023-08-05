@@ -111,8 +111,6 @@ myImage.onclick = () => {
   ```
 1. `main.js`に以下を追加します
   ```js
-  const myButton = document.querySelector('button');
-
   // タイトルを変更します
   function setUserName() {
     const myName = prompt('名前を入力してください。');
