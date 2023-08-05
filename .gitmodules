@@ -1,0 +1,3 @@
+[submodule "kagoshima-rubykaigi02-release-test"]
+	path = kagoshima-rubykaigi02-release-test
+	url = https://github.com/k-ruby/kagoshima-rubykaigi02
